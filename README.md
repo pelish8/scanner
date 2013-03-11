@@ -1,0 +1,4 @@
+scanner
+=======
+
+php string scanner.
