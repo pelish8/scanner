@@ -111,7 +111,7 @@ class Scanner {
     * Scans the string until a character from a given string is encountered.
     * 
     * @param string $charactersSet The characters up to which to scan.
-    *
+    * @access public
     */
     public function scanUpToCharacterFromString ($charactersString) {
         $location = strcspn($this->string, $charactersString, $this->location, $this->end - $this->location);
