@@ -45,7 +45,13 @@ class Scanner {
      * @access public
      */
     public function scanToString ($string) {
-        $this->location = strpos($this->string, $string, $this->location) + strlen($string);
+        $location = strpos($this->string, $string, $this->location);
+        
+        if ($location === false) {
+            $this->location = $this->end;
+        } else {
+            $this->location = $location + strlen($string);
+        }
     }
 
     /**
@@ -79,7 +85,7 @@ class Scanner {
      * @access public
      */
     public function isAtEnd () {
-        return $this->location >= $this->end;
+        return ($this->location >= $this->end);
     }
 
     /**
