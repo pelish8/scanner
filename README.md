@@ -1,7 +1,7 @@
 scanner
 =======
 
-php string scanner inspired by [NSScanner](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSScanner_Class/Reference/Reference.html).
+php string scanner inspired by the [NSScanner](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSScanner_Class/Reference/Reference.html).
 
 
 ```php
