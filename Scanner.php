@@ -112,7 +112,7 @@ class Scanner {
     */
     public function location () {
         if ($this->mask === self::BACKWARD_SEARCH) {
-            return $this->length - $this->location - 1;
+            return $this->length - $this->location;
         } else {
             return $this->location;
         }
